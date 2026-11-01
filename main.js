@@ -55,7 +55,7 @@ let language = localStorage.getItem('golden-khinkali-language') || 'en';
 if (!i18n[language]) language = 'en';
 let category = 'khinkali', reviewIndex = 0, lightboxIndex = 0;
 const $ = (selector) => document.querySelector(selector);
-const imagePath = (name) => `assets/images/${name}`;
+const imagePath = (name) => `${name}`;
 const price = (value) => `${new Intl.NumberFormat('en-US').format(value)} ֏`;
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 
